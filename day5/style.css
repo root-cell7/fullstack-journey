@@ -12,20 +12,9 @@ header, footer {
 
 .container {
     display: flex;
-    min-height: 80vh;
-}
-.container {
-    display: flex;
     gap: 20px;
 }
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-    .sidebar {
-        width: 100%;
-    }
-}
+
 .sidebar {
     width: 200px;
     background-color: #f4f4f4;
@@ -35,4 +24,12 @@ header, footer {
 .content {
     flex: 1;
     padding: 20px;
+}
+@media (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
 }
